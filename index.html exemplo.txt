@@ -5,9 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Pack de Templates para Canva</title>
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    /* Estilos Gerais */
     * {
       margin: 0;
       padding: 0;
@@ -15,66 +14,72 @@
     }
 
     body {
-      font-family: 'Arial', sans-serif;
-      background-color: #f0f8ff;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #e0f7fa, #fff);
       color: #333;
+      overflow-x: hidden;
     }
 
     .container {
       width: 90%;
       max-width: 1200px;
       margin: 0 auto;
-      padding: 20px;
+      padding: 40px 20px;
       text-align: center;
+      animation: fadeIn 1s ease;
     }
 
     header h1 {
-      font-size: 2.5rem;
+      font-size: 2.8rem;
       color: #2c3e50;
+      margin-bottom: 10px;
     }
 
     .subheading {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       color: #16a085;
+      margin-bottom: 30px;
     }
 
     h2 {
       font-size: 1.8rem;
       color: #2980b9;
-      margin-bottom: 15px;
+      margin: 25px 0 15px;
     }
 
     ul {
-      list-style-type: none;
+      list-style: none;
       padding: 0;
+      margin-bottom: 20px;
     }
 
     ul li {
       font-size: 1.1rem;
       margin-bottom: 10px;
-      color: #2c3e50;
     }
 
     .price {
       background-color: #16a085;
-      padding: 20px;
-      border-radius: 10px;
+      padding: 30px;
+      border-radius: 12px;
       color: white;
+      margin-top: 30px;
+      animation: fadeInUp 1s ease;
     }
 
     .discount {
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       font-weight: bold;
     }
 
     .price-value {
-      font-size: 1.8rem;
+      font-size: 2rem;
       font-weight: bold;
       color: #f4d03f;
     }
 
     .cta {
-      margin-top: 20px;
+      margin-top: 25px;
     }
 
     .btn {
@@ -82,7 +87,7 @@
       color: white;
       font-size: 1.2rem;
       padding: 15px 30px;
-      border-radius: 5px;
+      border-radius: 8px;
       text-decoration: none;
       display: inline-block;
       transition: background-color 0.3s ease, transform 0.2s;
@@ -92,57 +97,77 @@
       background-color: #2ecc71;
       transform: scale(1.05);
     }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #999;
+      font-size: 0.9rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <header>
       <h1>Transforme Suas Criações no Canva com Nosso Pack Exclusivo de Templates!</h1>
-      <p class="subheading">Eleve o nível dos seus projetos com facilidade!</p>
+      <p class="subheading">Eleve o nível dos seus projetos com facilidade e profissionalismo!</p>
     </header>
 
     <section class="offer">
       <h2>O que está incluso no nosso pack?</h2>
       <ul>
-        <li>Templates modernos e criativos para redes sociais, apresentações, flyers e muito mais!</li>
-        <li>Designs 100% personalizáveis: fácil de editar, alterar textos, imagens e cores.</li>
-        <li>Organização e variedade: uma seleção de templates organizados por categorias.</li>
-        <li>Templates atualizados constantemente para você ter designs frescos.</li>
+        <li>Templates modernos e criativos para redes sociais, apresentações, flyers e mais!</li>
+        <li>Designs 100% personalizáveis para editar textos, imagens e cores.</li>
+        <li>Organizados por categoria para facilitar seu uso.</li>
+        <li>Atualizações constantes com novos templates.</li>
       </ul>
     </section>
 
     <section class="advantages">
       <h2>Vantagens de adquirir o Pack:</h2>
       <ul>
-        <li>Economize tempo com modelos prontos para usar.</li>
-        <li>Ideal para qualquer tipo de projeto: de redes sociais a apresentações corporativas.</li>
-        <li>Sem necessidade de experiência: perfeito para iniciantes e profissionais.</li>
+        <li>Economize tempo com modelos prontos.</li>
+        <li>Ideal para iniciantes e profissionais.</li>
+        <li>Aumente o engajamento com designs de alto impacto.</li>
       </ul>
     </section>
 
     <section class="price">
-      <h2>Oferta Exclusiva:</h2>
+      <h2>Oferta Especial:</h2>
       <p class="discount">De R$ 199,90 por apenas <span class="price-value">R$ 99,90</span>!</p>
-      <p>Sim, você leu corretamente! Um desconto imperdível para transformar seus designs, sem pesar no bolso. Aproveite essa oferta por tempo limitado!</p>
+      <p>Aproveite essa promoção por tempo limitado e revolucione sua presença digital!</p>
     </section>
 
     <section class="cta">
-      <a href="#" class="btn" id="buyButton">COMPRE AQUI</a>
+      <a href="#" class="btn" id="buyButton">GARANTIR MEU PACK AGORA</a>
     </section>
   </div>
 
+  <footer>
+    &copy; 2025 Pack Templates para Canva. Todos os direitos reservados.
+  </footer>
+
   <script>
-    document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", () => {
       const button = document.getElementById("buyButton");
-      button.addEventListener("mouseover", function() {
-        button.style.backgroundColor = "#2ecc71";
-      });
-      button.addEventListener("mouseout", function() {
-        button.style.backgroundColor = "#2980b9";
-      });
-      button.addEventListener("click", function(event) {
-        event.preventDefault();
-        alert("Oferta aplicada! Redirecionando para o pagamento...");
+      button.addEventListener("click", (e) => {
+        e.preventDefault();
+        button.innerText = "Redirecionando...";
+        button.style.transform = "scale(0.95)";
+        setTimeout(() => {
+          alert("Oferta aplicada! Você será redirecionado para o checkout.");
+          window.location.href = "https://seulinkdecheckout.com";
+        }, 1500);
       });
     });
   </script>
