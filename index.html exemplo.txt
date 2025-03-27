@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pack de Templates para Canva</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Estilos Gerais */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f8ff;
+      color: #333;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #2c3e50;
+    }
+
+    .subheading {
+      font-size: 1.2rem;
+      color: #16a085;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      color: #2980b9;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul li {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+      color: #2c3e50;
+    }
+
+    .price {
+      background-color: #16a085;
+      padding: 20px;
+      border-radius: 10px;
+      color: white;
+    }
+
+    .discount {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .price-value {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #f4d03f;
+    }
+
+    .cta {
+      margin-top: 20px;
+    }
+
+    .btn {
+      background-color: #2980b9;
+      color: white;
+      font-size: 1.2rem;
+      padding: 15px 30px;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+      transition: background-color 0.3s ease, transform 0.2s;
+    }
+
+    .btn:hover {
+      background-color: #2ecc71;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Transforme Suas Criações no Canva com Nosso Pack Exclusivo de Templates!</h1>
+      <p class="subheading">Eleve o nível dos seus projetos com facilidade!</p>
+    </header>
+
+    <section class="offer">
+      <h2>O que está incluso no nosso pack?</h2>
+      <ul>
+        <li>Templates modernos e criativos para redes sociais, apresentações, flyers e muito mais!</li>
+        <li>Designs 100% personalizáveis: fácil de editar, alterar textos, imagens e cores.</li>
+        <li>Organização e variedade: uma seleção de templates organizados por categorias.</li>
+        <li>Templates atualizados constantemente para você ter designs frescos.</li>
+      </ul>
+    </section>
+
+    <section class="advantages">
+      <h2>Vantagens de adquirir o Pack:</h2>
+      <ul>
+        <li>Economize tempo com modelos prontos para usar.</li>
+        <li>Ideal para qualquer tipo de projeto: de redes sociais a apresentações corporativas.</li>
+        <li>Sem necessidade de experiência: perfeito para iniciantes e profissionais.</li>
+      </ul>
+    </section>
+
+    <section class="price">
+      <h2>Oferta Exclusiva:</h2>
+      <p class="discount">De R$ 199,90 por apenas <span class="price-value">R$ 99,90</span>!</p>
+      <p>Sim, você leu corretamente! Um desconto imperdível para transformar seus designs, sem pesar no bolso. Aproveite essa oferta por tempo limitado!</p>
+    </section>
+
+    <section class="cta">
+      <a href="#" class="btn" id="buyButton">COMPRE AQUI</a>
+    </section>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const button = document.getElementById("buyButton");
+      button.addEventListener("mouseover", function() {
+        button.style.backgroundColor = "#2ecc71";
+      });
+      button.addEventListener("mouseout", function() {
+        button.style.backgroundColor = "#2980b9";
+      });
+      button.addEventListener("click", function(event) {
+        event.preventDefault();
+        alert("Oferta aplicada! Redirecionando para o pagamento...");
+      });
+    });
+  </script>
+</body>
+</html>
